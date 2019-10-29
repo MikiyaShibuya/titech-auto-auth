@@ -1,0 +1,19 @@
+{
+  "name": "Auto Matrix Braker",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "An easy way for logging in!",
+  "content_scripts": [{
+    "matches": ["https://portal.nap.gsic.titech.ac.jp/GetAccess/Login?Template=idg_key*"],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "permissions": [
+      "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
+}
